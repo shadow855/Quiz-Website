@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Section</title>
+    <link rel="stylesheet" type="text/css" href="home_style.css">
+</head>
+<body>
+  <nav id="navbar">
+    <div class="logo">
+        <img src="Images/Logo.jpeg" alt="Logo" style="border-radius: 100%;">
+    </div>
+    <ul class="nav_ul">
+        <li class="nav_li"><a href="index.html">Home</a></li>
+        <li class="nav_li"><a href="quiz_section.html">Quiz Section</a></li>
+        <li class="nav_li"><a href="about.html">About</a></li>
+        <li class="nav_li"><a href="contact.html">Contact Us</a></li>
+    </ul>
+    <!-- Add a menu icon for mobile view -->
+    <div class="menu-icon">
+        <div class="menu-icon-bar"></div>
+        <div class="menu-icon-bar"></div>
+        <div class="menu-icon-bar"></div>
+    </div>
+</nav>
+    <div class="quiz_container">
+        <section class="html_section section" id="html_section">
+            <div class="quiz_headings">
+                <h2>Start your HTML Quiz here</h2>
+                <p>Click anywhere to start HTML Quiz.</p>
+              </div>
+              <div class="quiz_image">
+                <img src="Images/Html.png" alt="HTML_Image">
+              </div>
+        </section>
+        <section class="css_section section" id="css_section">
+            <div class="quiz_image">
+                <img src="Images/Css.png" alt="CSS_Image">
+              </div>
+            <div class="css_headings">
+                <h2>Start your CSS Quiz here</h2>
+                <p>Click anywhere to start CSS Quiz.</p>
+            </div> 
+        </section>
+        <section class="js_section section" id="js_section">
+            <div class="quiz_headings">
+                <h2>Start your JAVASCRIPT Quiz here</h2>
+                <p>Click anywhere to start JAVASCRIPT Quiz.</p>
+              </div>
+              <div class="quiz_image">
+                <img src="Images/Js.png" alt="JS_Image">
+              </div>
+        </section>
+        
+        <div id="quizBox" class="quiz-box">
+            <div class="quiz-question">
+                <h3 id="heading">HTML Questions</h2>
+              <p id="quiz_question"><strong>Question</strong>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde exercitationem excepturi possimus blanditiis, suscipit earum perferendis quisquam
+                   eveniet sint voluptas minus provident molestias fugit. Consectetur tempora pariatur tenetur nobis eos!</p>
+            </div>
+            <div id="quiz_options">
+              <label>
+                <input type="radio" name="answer" value="option1">
+                Paris
+              </label>
+              <label>
+                <input type="radio" name="answer" value="option2">
+                Rome
+              </label>
+              <label>
+                <input type="radio" name="answer" value="option3">
+                London
+              </label>
+              <label>
+                <input type="radio" name="answer" value="option4">
+                Berlin
+              </label>
+            </div>
+            <div id="button_div">
+                <button id="submit_button">Submit</button>
+                <button id="next_button">Next</button>
+            </div>
+        </div>
+        
+        <div id="score-container" class="scorecontainer" style="display: none;">
+            <div>
+                <h3 id="finalscoretext">Your final score is : </h3>
+                <div><p id="passorfail">Pass/Fail</p></div>
+                <button id="okbutton">OK</button>
+            </div>
+        </div>
+
+        <div id="timer" class="timer" style="display: none;">
+            <p id="timerpara">15</p>
+        </div>
+
+    </div>
+    
+    <footer>
+        <p>Copyright &copy; 2023 My Quiz Website</p>
+    </footer>
+    <script src="quiz_section.js"></script>
+    <script src="navbarToggle.js"></script>
+</body>
+</html>
